@@ -98,7 +98,7 @@ tags: [{topic1}, {topic2}, {topic3}]
 [2] {...}
 
 # Language
-- Clear, concise.
+- Use clear and concise language.
 - Use full sentences emphasizing logical coherence.
 - Use timestamps (e.g., 12:34) when quoting or summarizing specific segments.
 
