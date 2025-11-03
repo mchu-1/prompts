@@ -102,7 +102,7 @@ tags: [{topic1}, {topic2}, {topic3}]
 - Use full sentences emphasizing logical coherence.
 - Use timestamps (e.g., 12:34) when quoting or summarizing specific segments.
 
-# Quality Checklist (must pass)
+# Quality Checklist
 - Deterministic `<name>` and `<name>.md` produced.
 - Mermaid diagram present and appropriate type chosen.
 - At least 3 in-text citations and entries in References with URLs.
