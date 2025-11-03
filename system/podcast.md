@@ -90,14 +90,15 @@ tags: [{topic1}, {topic2}, {topic3}]
   - {assumptions, controversies, missing data, alternative views}
 
 ## Selected Quotes
+```
 - {12:34} "{short quote}" — {speaker}
 - {...}
+```
 
 ## References
 ```
 [1] {Title} — {Source}, {URL}
 [2] {...}
-```
 
 # Language
 - Use clear and concise language.
