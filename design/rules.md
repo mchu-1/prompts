@@ -6,5 +6,5 @@
 - Emphasise human readability of the final document:
     - Use clear, concise language.
     - Write in full sentences, emphasising logical coherence between sentences.
-    - Organise instructions into key sections based on conceptual relationships.
+    - Organise instructions into key sections based on conceptual relations.
     - Declare langauges in embedded code blocks (e.g. ```python).
