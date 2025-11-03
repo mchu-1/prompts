@@ -21,28 +21,29 @@ Given a podcast URL, generate a high-quality markdown summary (≤5 pages) with 
 - Be neutral, precise, and concise. Use structured bullets and short paragraphs.
 - Do not hallucinate. Flag uncertainties and mark with "(uncertain)".
 - Include in-text citations as bracketed numbers (e.g., [1]) tied to a References section with URLs.
-- Use timestamps (e.g., 12:34) when quoting or summarising specific segments; if unavailable, state so.
-- Length cap: ≤5 pages.
+- Use timestamps (e.g., 12:34) when quoting or summarizing specific segments; if unavailable, state this.
+- Limit length to ≤5 pages.
 - If non-English, note the language and proceed; translate key terms when helpful.
 
 # Name & File Naming
-Define a snakecase `<name>` as `<subject>_<topic>` and output to `<name>.md`.
-- `<subject>`: last name of the primary speaker. If multiple speakers: choose the primary guest; if unclear, use the host; if still unclear, use the channel/organisation name.
+Define a snake_case `<name>` as `<subject>_<topic>` and output to `<name>.md`.
+- `<subject>`: last name of the primary speaker. If multiple speakers: choose the primary guest; if unclear, use the host; if still unclear, use the channel/organization name.
 - `<topic>`: one-word topic summary (lowercase domain noun, e.g., "sleep", "cuda", "longevity", "alignment").
-- Normalise to lowercase ASCII (remove diacritics). Allowed characters: `a-z0-9_` only. Collapse spaces/hyphens to `_`; strip others.
+- Normalize to lowercase ASCII (remove diacritics). Allowed characters: `a-z0-9_` only. Collapse spaces/hyphens to `_`; strip others.
+- If `<subject>` cannot be determined, use the channel or organization name to ensure determinism.
 
 # Workflow
 1. Retrieve materials from the URL: title, description, show notes, comments, and transcript (auto-generated if available). If transcript is unavailable or paywalled, say so and rely on official descriptions and reputable secondary sources.
 2. Segment the episode into logical chapters (or use provided chapters).
 3. Extract key claims, methods, definitions, frameworks, and recommendations.
 4. Diagram selection and creation:
-   - mindmap: conceptual overviews/frameworks (default).
-   - flowchart: processes/pipelines/decision paths.
-   - sequenceDiagram: interactions over time between actors/components.
+   - `mindmap`: conceptual overviews/frameworks (default).
+   - `flowchart`: processes/pipelines/decision paths.
+   - `sequenceDiagram`: interactions over time between actors/components.
    - Keep the diagram minimal (≤25 nodes/edges).
-5. Fact-check technical/empirical claims with 3–5 reputable sources prioritising the listed knowledge sources. Add in-text citations [n] and populate a References section with URLs and titles.
+5. Fact-check technical/empirical claims with 3–5 reputable sources prioritizing the listed knowledge sources. Add in-text citations [n] and include a References section with titles and URLs.
 6. Compose the markdown using the template below.
-7. Edge cases: very long episodes (process in chunks, then synthesise); multi-part series (note part number); non-English (note language); missing timestamps (state unavailability).
+7. Edge cases: very long episodes (process in chunks, then synthesize); multi-part series (note part number); non-English (note language); missing timestamps (state unavailability).
 
 # Domain-Specific Languages (DSLs)
 Use short DSL blocks (≤10 lines) only when illustrative and relevant:
@@ -102,13 +103,13 @@ tags: [{topic1}, {topic2}, {topic3}]
 
 # Language
 - Clear, concise.
-- Full sentences emphasising logical coherence.
-- Use timestamps (e.g., 12:34) when quoting or summarising specific segments.
+- Use full sentences emphasizing logical coherence.
+- Use timestamps (e.g., 12:34) when quoting or summarizing specific segments.
 
 # Quality Checklist (must pass)
 - Deterministic `<name>` and `<name>.md` produced.
 - Mermaid diagram present and appropriate type chosen.
 - At least 3 in-text citations and entries in References with URLs.
-- Timestamps included where available; unavailability is stated if not.
+- Timestamps included where available; if not available, state this explicitly.
 - Neutral tone; no speculation beyond sources; uncertainties flagged.
 - ≤5 pages; structured bullets and short paragraphs.
