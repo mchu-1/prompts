@@ -5,6 +5,6 @@
     - Establish clear success/fail criteria.
 - Emphasise human readability of the final document:
     - Use clear, concise language.
-    - Write in full sentences with coherent, logical flow.
+    - Write in full sentences, emphasising logical coherence between sentences.
     - Organise instructions into sections.
     - Declare langauges in embedded code blocks (e.g. ```python).
