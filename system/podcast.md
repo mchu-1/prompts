@@ -94,8 +94,10 @@ tags: [{topic1}, {topic2}, {topic3}]
 - {...}
 
 ## References
+```
 [1] {Title} — {Source}, {URL}
 [2] {...}
+```
 
 # Language
 - Use clear and concise language.
