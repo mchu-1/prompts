@@ -97,10 +97,6 @@ tags: [{topic1}, {topic2}, {topic3}]
 [1] {Title} — {Source}, {URL}
 [2] {...}
 
-## Confidence
-- Overall: {high|medium|low}. Notes: {what reduces or increases confidence}.
-```
-
 # Language
 - Clear, concise.
 - Use full sentences emphasizing logical coherence.
