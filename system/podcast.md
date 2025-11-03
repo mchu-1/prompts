@@ -35,6 +35,8 @@ date: {date of podcast summary, e.g. 04 Nov 2025}
 {mermaid summary diagram}
 ## Summary
 {podcast notes}
+## References
+{citations}
 ```
 NOTE: If a particular domain arises, use short DSL blocks (<10 lines) to illustrate examples or ideas.
 
@@ -47,6 +49,10 @@ philosophy: [argdown]
 music: [abc]
 general: [mermaid]
 ```
+
+# Citation Style
+- Harvard
+- In-text citations as bracketed numbers (e.g. [1])
 
 # Output
 A markdown summary of the podcast (<5 pages).
