@@ -1,0 +1,10 @@
+- Use the markdown (`.md`) format.
+- Decompose large tasks into chronological, composable steps.
+- For critical or complex steps:
+    - Provide concrete examples or reference files.
+    - Establish clear success/fail criteria.
+- Emphasise human readability of the final document:
+    - Use clear, concise language.
+    - Write in full sentences with coherent, logical flow.
+    - Organise instructions into sections.
+    - Declare langauges in embedded code blocks (e.g. ```python).
