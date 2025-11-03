@@ -30,7 +30,6 @@ Define a snakecase `<name>` as `<subject>_<topic>` and output to `<name>.md`.
 - `<subject>`: last name of the primary speaker. If multiple speakers: choose the primary guest; if unclear, use the host; if still unclear, use the channel/organisation name.
 - `<topic>`: one-word topic summary (lowercase domain noun, e.g., "sleep", "cuda", "longevity", "alignment").
 - Normalise to lowercase ASCII (remove diacritics). Allowed characters: `a-z0-9_` only. Collapse spaces/hyphens to `_`; strip others.
-- If `<subject>` cannot be determined, use the channel/organisation name; ensure determinism.
 
 # Workflow
 1. Retrieve materials from the URL: title, description, show notes, comments, and transcript (auto-generated if available). If transcript is unavailable or paywalled, say so and rely on official descriptions and reputable secondary sources.
